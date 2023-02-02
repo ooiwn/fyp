@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right|end"
+        android:layout_margin="16dp"
+        app:icon="@drawable/ic_action_add"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_med_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="16dp"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/drug"/>
+
+    <TextView
+        android:id="@+id/add_med_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="105dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="bottom|right|end"
+        android:text="Add Medicine"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_measure_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="165dp"
+        android:layout_marginRight="16dp"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/tracker" />
+
+    <TextView
+        android:id="@+id/add_measure_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="180dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="bottom|right|end"
+        android:text="Add Measurement"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_activity_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="240dp"
+        android:layout_marginRight="16dp"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/ic_action_activity"/>
+
+    <TextView
+        android:id="@+id/add_activity_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="255dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="bottom|right|end"
+        android:text="Add Activity"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/symptom_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="315dp"
+        android:layout_marginRight="16dp"
+        app:fabSize="normal"
+        android:layout_gravity="bottom|right|end"
+        android:src="@drawable/ic_action_symptom"/>
+
+    <TextView
+        android:id="@+id/symptom_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginBottom="330dp"
+        android:layout_marginRight="80dp"
+        android:layout_gravity="bottom|right|end"
+        android:text="Add Symptom Check"
+        android:textStyle="bold"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/listTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicine" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracker" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

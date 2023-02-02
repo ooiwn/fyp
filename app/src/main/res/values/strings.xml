@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HealthHelper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="duration_items">
+        <item>No end date</item>
+        <item>until a certain date</item>
+    </string-array>
+    <string-array name="frequency_items">
+        <item>Every few hours</item>
+        <item>Daily</item>
+        <item>Specific days</item>
+    </string-array>
+</resources>

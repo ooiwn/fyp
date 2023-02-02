@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:id="@+id/linearLayout">
+
+        <EditText android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColor="#FF192133"
+            android:textColorHint="#A0192133"
+            android:fontFamily="sans-serif-light"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textColor="#FF192133"
+            android:textColorHint="#A0192133"
+            android:fontFamily="sans-serif-light"
+            android:hint="Password"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRegister"
+            android:text="REGISTER"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/loginhere"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Here"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="#0000FF"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
